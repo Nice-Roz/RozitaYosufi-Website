@@ -1,0 +1,42 @@
+.text-margin {
+  margin-top: 1rem;
+}
+.footer-text-wrapper {
+  margin: 10rem auto;
+  color: rgba(255, 255, 255, 0.2);
+  background-image: url(../../../img/rainbow5.jpg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  background-clip: "";
+  animation: animate 15s linear infinite;
+  -webkit-text-stroke: 1px #000;
+  display: inline;
+  padding-right: 3rem;
+  border-bottom: 1px dotted var(--orange);
+  box-shadow: var(--box-shadow);
+  font-size: 19px;
+  text-decoration: underline var(--orange);
+  cursor: pointer;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0 top 5px;
+  }
+  100% {
+    background-position: left 1000px top 0px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .footer-text-wrapper {
+    font-size: 14px;
+    -webkit-text-stroke: 0.5px #000;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-decoration: none;
+    border-bottom: none;
+  }
+}

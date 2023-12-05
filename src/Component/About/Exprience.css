@@ -1,0 +1,13 @@
+.date1{
+    color: var(--orange);
+}
+h3{
+    color:var(--orange);
+    font-size:20px;
+    font-weight:bold;
+    cursor: pointer;
+}
+p{
+    color:var(--gray);
+    cursor: pointer;
+}

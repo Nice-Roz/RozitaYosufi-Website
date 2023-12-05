@@ -1,0 +1,10 @@
+.rated {
+    color: var(--orange); /*color for rated stars */
+  }
+  .unrated {
+    color: #ccc; /* color for unrated stars */
+  }
+  .star {
+    cursor: pointer;
+   margin-right: 4px;
+  }

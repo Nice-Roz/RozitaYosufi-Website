@@ -1,0 +1,133 @@
+.teachers{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+.left-t{
+    display: flex;
+    flex: 1 1;
+    gap: 1.5rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: var(--gray);
+}
+.left-t>:nth-child(1){
+    color: var(--orange);
+    font-weight: bold;
+}
+.left-t>:nth-child(2),
+.left-t>:nth-child(3){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.left-t>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing:2px ;
+    line-height: 30px;
+}
+.right-t{
+    flex: 1;
+    position: relative;
+    margin-top: 14%;
+}
+.img-t{
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  right: 8rem;
+  top: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+.right-t>:nth-child(1){
+   position: absolute;
+   width: 17rem;
+   height: 20rem;
+   border: 2px solid var(--orange);
+   box-shadow: var(--box-shadow);
+   background-color: transparent;
+   border-radius: 10px;
+   right: 9rem;
+   top: 0.9rem;
+}
+.right-t>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    background:var(--background);
+    border-radius: 10px;
+    right: 7rem;
+    top: 4rem;
+}
+.arrows{
+   display: flex;
+   gap: 1rem;
+   position: absolute;
+   bottom: 0rem;
+   left: 3rem;
+}
+.arrows>.icon-arrow{
+    width: 1.5rem;
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--orange);
+}
+@media screen and (max-width:1024px) {
+    .img-t{
+       right: 3rem;
+      
+    }
+    .right-t{
+        margin-top: 25%;
+    }
+    .right-t>:nth-child(1){
+        right: 4rem;
+    }
+    .right-t>:nth-child(2){
+        right: 2rem;
+    }
+}
+@media screen and (max-width:900px) {
+    .teachers{
+        flex-direction: column;
+        margin-top: 6rem;
+        padding: 0 1rem;
+    }
+    .left-t>:nth-child(2),
+    .left-t>:nth-child(3){
+        font-size: xx-large;
+    }
+    .right-t{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .right-t>div{
+        position: relative; 
+    }
+    .right-t>:nth-child(1){
+        margin: 0 auto;
+        left: 1rem;
+        box-shadow: none;
+    }
+    .right-t>:nth-child(2){
+       display: none;
+    }
+    .right-t>img{
+        top:5px; 
+        left: 5px;
+        position: relative;
+        align-self: center;
+    }
+    .right-t>:last-child{
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,29 @@
+.text-margin {
+  margin-top: 1rem;
+}
+.text-wrapper h1 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.2);
+  background-image: url(../../img/rainbow5.jpg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  background-clip: "";
+  animation: animate 15s linear infinite;
+  -webkit-text-stroke: 2px #000;
+  font-weight: bold;
+  font-size: 30px;
+}
+@keyframes animate {
+  0% {
+    background-position: left 0 top 5px;
+  }
+  100% {
+    background-position: left 1000px top 0px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .text-wrapper h1 {
+    font-size: 34px;
+    -webkit-text-stroke: 2px #000;
+  }
+}

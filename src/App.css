@@ -1,0 +1,132 @@
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --limon: #fdc50f;
+
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+
+  --bg-dark: #0f141e;
+  --bg-light: #f9f9f9;
+  --dark-color: rgba(15, 20, 30, 0.8);
+  --danger-color: #ea4343;
+  --bg-light-alt: hsl(0, 0%, 100%);
+  --bg-color-theme: hsl(210, 3%, 16%);
+  --bg-color: hsl(216, 18%, 16%);
+  --bg-color-alt: hsl(216, 3%, 35%);
+  --container-color: hsl(217, 18%, 14%);
+  --card-color: hsl(214, 64%, 44%);
+
+  --transition: cubic-bazier(0.3, 0, 0.3, 1);
+
+  --black: rgb(17, 16, 16);
+
+  --background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  --background-purple: linear-gradient(180deg, #d885f9 26.71%, #90149b 99.36%);
+  --background-red: linear-gradient(180deg, #fe7378 26.71%, #cd2020 99.36%);
+  --background-blueviolet: linear-gradient(
+    180deg,
+    #af7df9 26.71%,
+    #701dbe 99.36%
+  );
+  --background-blue: linear-gradient(180deg, #5c6ffd 26.71%, #1e21af 99.36%);
+  --background-goldenrod: linear-gradient(
+    180deg,
+    #e6b740 26.71%,
+    #cb8a1b 99.36%
+  );
+  --background-pink: linear-gradient(180deg, #f56aab 26.71%, #cb1b82 99.36%);
+  --background-green-light: linear-gradient(
+    180deg,
+    #aeda41 26.71%,
+    #3bc411 99.36%
+  );
+  --background-orange: linear-gradient(180deg, #f9924e 26.71%, #ef5a0a 99.36%);
+  --background-green: linear-gradient(180deg, #41cd2f 26.71%, #45a80c 99.36%);
+  --background-limon: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  --background-bluelight: linear-gradient(
+    180deg,
+    rgb(84, 184, 250) 26.71%,
+    #23b6f6d8 99.36%
+  );
+  --background-black: linear-gradient(
+    180deg,
+    rgb(125, 123, 123) 26.71%,
+    #36302a 99.36%
+  );
+
+  --box-shadow: 0px 20px 24px 3px rgba(123, 32, 175, 0.42);
+  --box-shadow-purple: 0px 20px 24px 3px rgba(176, 36, 153, 0.42);
+  --box-shadow-red: 0px 20px 24px 3px rgba(176, 36, 36, 0.42);
+  --box-shadow-blueviolet: 0px 20px 24px 3px rgba(141, 55, 211, 0.42);
+  --box-shadow-pink: 0px 20px 24px 3px rgba(255, 147, 221, 0.42);
+  --box-shadow-blue: 0px 15px 15px 3px rgba(140, 177, 252, 0.42);
+  --box-shadow-goldenrod: 0px 15px 15px 3px rgba(252, 220, 140, 0.42);
+  --box-shadow-green-light: 0px 20px 24px 3px rgba(174, 255, 147, 0.42);
+  --box-shadow-orange: 0px 15px 15px 3px rgba(249, 120, 40, 0.42);
+  --box-shadow-green: 0px 20px 24px 3px rgba(67, 191, 25, 0.42);
+  --box-shadow-limon: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  --box-shadow-bluelight: 0px 20px 18px 3px rgba(20, 177, 225, 0.423);
+  --box-shadow-black: 0px 20px 24px 3px rgba(107, 105, 107, 0.574);
+}
+
+.App {
+  /* padding: 0.5rem 3.5rem; */
+  overflow: hidden;
+  color: var(--black);
+}
+
+body {
+  background: white;
+}
+/* .main{ */
+/* margin-left: 110px; */
+/* } */
+
+.button {
+  border-radius: 34px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  /* background: linear-gradient(180deg,#fdc50f 26.71%,#fb982f 99.36%); */
+  background: var(--background);
+  /* box-shadow: 0px 20px 24px 3px rgba(251,161,40,0.42); */
+  box-shadow: var(--box-shadow);
+}
+
+.button:hover {
+  background: white;
+  cursor: pointer;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.stroke-text {
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-color: var(--gray);
+  -webkit-text-stroke-width: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .blur {
+    display: none;
+  }
+}

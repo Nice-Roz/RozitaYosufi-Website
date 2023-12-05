@@ -1,0 +1,139 @@
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  padding-top: 0.3rem;
+}
+.navbar-left {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+.navbar-name img {
+  width: 50px;
+  height: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 10px;
+  background: var(--background);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.navbar-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+.navbar-list {
+  flex: 10;
+}
+.navbar-ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+ul li:hover {
+  cursor: pointer;
+  color: var(--orange);
+  font-size: 20px;
+}
+ul li::after {
+  content: "";
+  display: block;
+  color: var(--orange);
+  background-color: var(--orange);
+  height: 2px;
+  margin: auto;
+  width: 0%;
+  transition: 0.5s;
+}
+ul li:hover::after {
+  width: 100%;
+  color: var(--orange);
+}
+ul li:active {
+  color: rgb(247, 247, 0);
+}
+.bars {
+  display: none;
+}
+.navbar-button {
+  flex: 2;
+  margin-right: 3rem;
+  margin-top: 5%;
+}
+.nav-item-hide {
+  display: none;
+}
+.dropDown option {
+  color: var(--orange);
+  background-color: var(--background);
+}
+
+@media screen and (max-width: 920px) {
+  .navbar {
+    border-bottom: 1px solid var(--orange);
+    /* box-shadow: var(--box-shadow); */
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    background: #fff;
+  }
+  .navbar-button {
+    display: none;
+  }
+  .navbar-right {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    z-index: 9999;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 10px;
+  }
+  .nav-item-hide {
+    display: inline;
+  }
+  .bars {
+    display: block;
+  }
+  .navbar-ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+  ul li:hover {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  ul li::after {
+    color: #fff;
+    background-color: #fff;
+  }
+
+  ul li:hover::after {
+    color: #fff;
+  }
+  .navbar-name {
+    margin-top: 0.3rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .navbar-left {
+    gap: 1rem;
+  }
+}
